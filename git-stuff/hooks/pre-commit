@@ -1,0 +1,12 @@
+#!/bin/sh
+
+. git-sh-setup  # for die 
+
+bad_words=( "byebug" "no_commit" )
+for bad_word in "${bad_words[@]}"
+do
+  has_bad_word=$(git diff-index -p -M --cached HEAD -- | grep '^+' | awk '{print tolower($0)}' | grep "$bad_word")
+  [[ -n "$has_bad_word" ]] && die "Blocking commit because string '$bad_word' detected in patch"
+done
+
+echo "committing"

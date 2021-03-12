@@ -1,0 +1,31 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.tabSize": 2,
+    "git.inputValidationSubjectLength": null,
+    "git.inputValidationLength": 72,
+    "workbench.colorTheme": "Snazzy",
+    "editor.acceptSuggestionOnEnter": "off",
+    "files.trimTrailingWhitespace": true,
+    "files.exclude": {
+        "flare-mobile/tmp/*": true,
+        "old-flare-mobile/*": true,
+        "vendor/*": true
+    },
+    "workbench.colorCustomizations": {
+        "[Snazzy]": {
+            "gitDecoration.ignoredResourceForeground": "#7f8aa1"
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "[Snazzy]": {
+            "comments": "#7f8aa1"
+        }
+    },
+    "files.insertFinalNewline": true,
+    "search.exclude": {
+        "*.lock": true,
+        "vendor*": true
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "js/ts.implicitProjectConfig.experimentalDecorators": true
+}

@@ -1,0 +1,11 @@
+# Aliases
+alias gechmod="stat -f \"%OLp\""
+alias specchanged="git status | grep modified | grep spec | grep -v factories | cut -f 2 | cut -d ' ' -f 4 | xargs ./bin/rspec"
+alias migrate="bundle exec rails db:migrate && RAILS_ENV=test bin/rails db:migrate"
+alias rollback="bundle exec rails db:rollback && RAILS_ENV=test bin/rails db:rollback"
+
+# Set iTerm Tab Title to Current Working Directory
+DISABLE_AUTO_TITLE="true"
+precmd() {
+  echo -ne "\e]1;${PWD##*/}\a"
+}

@@ -1,0 +1,5 @@
+*.vscode
+*vendor
+*.personal
+*queue_couchdb_discrepancies_job.rb
+
